@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Usuário</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Confirmação de Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="csenha"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button fill="solid" expand="block" color="dark" (click)="register()">Cadastrar</ion-button>
+  <ion-button fill="solid" expand="block" color="primary" (click)="registerfb()">Cadastrar com Facebook</ion-button>
+  <ion-button fill="solid" expand="block" color="danger" (click)="registergoogle()">Cadastrar com Google</ion-button>
+
+</ion-content>
